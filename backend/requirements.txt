@@ -4,3 +4,4 @@ pydantic
 sqlalchemy>=2
 aiosqlite
 python-dotenv
+psycopg
