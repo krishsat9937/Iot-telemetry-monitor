@@ -1,0 +1,1319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B671E6A2E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6B671E692E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B671E1C2E85D7D70031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E0D2E85D7D20031CE8A;
+			remoteInfo = HKTelemetry;
+		};
+		6B671E262E85D7D70031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E0D2E85D7D20031CE8A;
+			remoteInfo = HKTelemetry;
+		};
+		6B671E542E86FBD90031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E462E86FBD60031CE8A;
+			remoteInfo = HKTelemetryWatch;
+		};
+		6B671E5E2E86FBD90031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E462E86FBD60031CE8A;
+			remoteInfo = HKTelemetryWatch;
+		};
+		6B671E6B2E86FBDA0031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E682E86FBDA0031CE8A;
+			remoteInfo = "HKTelemetryWatch Watch App";
+		};
+		6B671E792E86FBDB0031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E682E86FBDA0031CE8A;
+			remoteInfo = "HKTelemetryWatch Watch App";
+		};
+		6B671E832E86FBDC0031CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B671E062E85D7D20031CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B671E682E86FBDA0031CE8A;
+			remoteInfo = "HKTelemetryWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B671E8D2E86FBDC0031CE8A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6B671E6A2E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B671E0E2E85D7D20031CE8A /* HKTelemetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKTelemetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E1B2E85D7D70031CE8A /* HKTelemetryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKTelemetryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E252E85D7D70031CE8A /* HKTelemetryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKTelemetryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E472E86FBD60031CE8A /* HKTelemetryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKTelemetryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E532E86FBD90031CE8A /* HKTelemetryWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKTelemetryWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E5D2E86FBD90031CE8A /* HKTelemetryWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKTelemetryWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E692E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HKTelemetryWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E782E86FBDB0031CE8A /* HKTelemetryWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HKTelemetryWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B671E822E86FBDC0031CE8A /* HKTelemetryWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HKTelemetryWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6B671E102E85D7D20031CE8A /* HKTelemetry */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HKTelemetry;
+			sourceTree = "<group>";
+		};
+		6B671E1E2E85D7D70031CE8A /* HKTelemetryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HKTelemetryTests;
+			sourceTree = "<group>";
+		};
+		6B671E282E85D7D70031CE8A /* HKTelemetryUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HKTelemetryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B671E0B2E85D7D20031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E182E85D7D70031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E222E85D7D70031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E442E86FBD60031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E502E86FBD90031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E5A2E86FBD90031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E662E86FBDA0031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E752E86FBDB0031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E7F2E86FBDC0031CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B671E052E85D7D20031CE8A = {
+			isa = PBXGroup;
+			children = (
+				6B671E102E85D7D20031CE8A /* HKTelemetry */,
+				6B671E1E2E85D7D70031CE8A /* HKTelemetryTests */,
+				6B671E282E85D7D70031CE8A /* HKTelemetryUITests */,
+				6B671E0F2E85D7D20031CE8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B671E0F2E85D7D20031CE8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B671E0E2E85D7D20031CE8A /* HKTelemetry.app */,
+				6B671E1B2E85D7D70031CE8A /* HKTelemetryTests.xctest */,
+				6B671E252E85D7D70031CE8A /* HKTelemetryUITests.xctest */,
+				6B671E472E86FBD60031CE8A /* HKTelemetryWatch.app */,
+				6B671E532E86FBD90031CE8A /* HKTelemetryWatchTests.xctest */,
+				6B671E5D2E86FBD90031CE8A /* HKTelemetryWatchUITests.xctest */,
+				6B671E692E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app */,
+				6B671E782E86FBDB0031CE8A /* HKTelemetryWatch Watch AppTests.xctest */,
+				6B671E822E86FBDC0031CE8A /* HKTelemetryWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B671E0D2E85D7D20031CE8A /* HKTelemetry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E2F2E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetry" */;
+			buildPhases = (
+				6B671E0A2E85D7D20031CE8A /* Sources */,
+				6B671E0B2E85D7D20031CE8A /* Frameworks */,
+				6B671E0C2E85D7D20031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6B671E102E85D7D20031CE8A /* HKTelemetry */,
+			);
+			name = HKTelemetry;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetry;
+			productReference = 6B671E0E2E85D7D20031CE8A /* HKTelemetry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B671E1A2E85D7D70031CE8A /* HKTelemetryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E322E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryTests" */;
+			buildPhases = (
+				6B671E172E85D7D70031CE8A /* Sources */,
+				6B671E182E85D7D70031CE8A /* Frameworks */,
+				6B671E192E85D7D70031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E1D2E85D7D70031CE8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6B671E1E2E85D7D70031CE8A /* HKTelemetryTests */,
+			);
+			name = HKTelemetryTests;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetryTests;
+			productReference = 6B671E1B2E85D7D70031CE8A /* HKTelemetryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B671E242E85D7D70031CE8A /* HKTelemetryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E352E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryUITests" */;
+			buildPhases = (
+				6B671E212E85D7D70031CE8A /* Sources */,
+				6B671E222E85D7D70031CE8A /* Frameworks */,
+				6B671E232E85D7D70031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E272E85D7D70031CE8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6B671E282E85D7D70031CE8A /* HKTelemetryUITests */,
+			);
+			name = HKTelemetryUITests;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetryUITests;
+			productReference = 6B671E252E85D7D70031CE8A /* HKTelemetryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6B671E462E86FBD60031CE8A /* HKTelemetryWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E8E2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch" */;
+			buildPhases = (
+				6B671E432E86FBD60031CE8A /* Sources */,
+				6B671E442E86FBD60031CE8A /* Frameworks */,
+				6B671E452E86FBD60031CE8A /* Resources */,
+				6B671E8D2E86FBDC0031CE8A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E6C2E86FBDA0031CE8A /* PBXTargetDependency */,
+			);
+			name = HKTelemetryWatch;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetryWatch;
+			productReference = 6B671E472E86FBD60031CE8A /* HKTelemetryWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B671E522E86FBD90031CE8A /* HKTelemetryWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E912E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatchTests" */;
+			buildPhases = (
+				6B671E4F2E86FBD90031CE8A /* Sources */,
+				6B671E502E86FBD90031CE8A /* Frameworks */,
+				6B671E512E86FBD90031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E552E86FBD90031CE8A /* PBXTargetDependency */,
+			);
+			name = HKTelemetryWatchTests;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetryWatchTests;
+			productReference = 6B671E532E86FBD90031CE8A /* HKTelemetryWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B671E5C2E86FBD90031CE8A /* HKTelemetryWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E942E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatchUITests" */;
+			buildPhases = (
+				6B671E592E86FBD90031CE8A /* Sources */,
+				6B671E5A2E86FBD90031CE8A /* Frameworks */,
+				6B671E5B2E86FBD90031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E5F2E86FBD90031CE8A /* PBXTargetDependency */,
+			);
+			name = HKTelemetryWatchUITests;
+			packageProductDependencies = (
+			);
+			productName = HKTelemetryWatchUITests;
+			productReference = 6B671E5D2E86FBD90031CE8A /* HKTelemetryWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6B671E682E86FBDA0031CE8A /* HKTelemetryWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E8A2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch App" */;
+			buildPhases = (
+				6B671E652E86FBDA0031CE8A /* Sources */,
+				6B671E662E86FBDA0031CE8A /* Frameworks */,
+				6B671E672E86FBDA0031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HKTelemetryWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "HKTelemetryWatch Watch App";
+			productReference = 6B671E692E86FBDA0031CE8A /* HKTelemetryWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B671E772E86FBDB0031CE8A /* HKTelemetryWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E972E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch AppTests" */;
+			buildPhases = (
+				6B671E742E86FBDB0031CE8A /* Sources */,
+				6B671E752E86FBDB0031CE8A /* Frameworks */,
+				6B671E762E86FBDB0031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E7A2E86FBDB0031CE8A /* PBXTargetDependency */,
+			);
+			name = "HKTelemetryWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "HKTelemetryWatch Watch AppTests";
+			productReference = 6B671E782E86FBDB0031CE8A /* HKTelemetryWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B671E812E86FBDC0031CE8A /* HKTelemetryWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B671E9A2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch AppUITests" */;
+			buildPhases = (
+				6B671E7E2E86FBDC0031CE8A /* Sources */,
+				6B671E7F2E86FBDC0031CE8A /* Frameworks */,
+				6B671E802E86FBDC0031CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B671E842E86FBDC0031CE8A /* PBXTargetDependency */,
+			);
+			name = "HKTelemetryWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "HKTelemetryWatch Watch AppUITests";
+			productReference = 6B671E822E86FBDC0031CE8A /* HKTelemetryWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B671E062E85D7D20031CE8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					6B671E0D2E85D7D20031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					6B671E1A2E85D7D70031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E0D2E85D7D20031CE8A;
+					};
+					6B671E242E85D7D70031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E0D2E85D7D20031CE8A;
+					};
+					6B671E462E86FBD60031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					6B671E522E86FBD90031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E462E86FBD60031CE8A;
+					};
+					6B671E5C2E86FBD90031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E462E86FBD60031CE8A;
+					};
+					6B671E682E86FBDA0031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					6B671E772E86FBDB0031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E682E86FBDA0031CE8A;
+					};
+					6B671E812E86FBDC0031CE8A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 6B671E682E86FBDA0031CE8A;
+					};
+				};
+			};
+			buildConfigurationList = 6B671E092E85D7D20031CE8A /* Build configuration list for PBXProject "HKTelemetry" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B671E052E85D7D20031CE8A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6B671E0F2E85D7D20031CE8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B671E0D2E85D7D20031CE8A /* HKTelemetry */,
+				6B671E1A2E85D7D70031CE8A /* HKTelemetryTests */,
+				6B671E242E85D7D70031CE8A /* HKTelemetryUITests */,
+				6B671E462E86FBD60031CE8A /* HKTelemetryWatch */,
+				6B671E522E86FBD90031CE8A /* HKTelemetryWatchTests */,
+				6B671E5C2E86FBD90031CE8A /* HKTelemetryWatchUITests */,
+				6B671E682E86FBDA0031CE8A /* HKTelemetryWatch Watch App */,
+				6B671E772E86FBDB0031CE8A /* HKTelemetryWatch Watch AppTests */,
+				6B671E812E86FBDC0031CE8A /* HKTelemetryWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B671E0C2E85D7D20031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E192E85D7D70031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E232E85D7D70031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E452E86FBD60031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E512E86FBD90031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E5B2E86FBD90031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E672E86FBDA0031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E762E86FBDB0031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E802E86FBDC0031CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B671E0A2E85D7D20031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E172E85D7D70031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E212E85D7D70031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E432E86FBD60031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E4F2E86FBD90031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E592E86FBD90031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E652E86FBDA0031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E742E86FBDB0031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B671E7E2E86FBDC0031CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B671E1D2E85D7D70031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E0D2E85D7D20031CE8A /* HKTelemetry */;
+			targetProxy = 6B671E1C2E85D7D70031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E272E85D7D70031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E0D2E85D7D20031CE8A /* HKTelemetry */;
+			targetProxy = 6B671E262E85D7D70031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E552E86FBD90031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E462E86FBD60031CE8A /* HKTelemetryWatch */;
+			targetProxy = 6B671E542E86FBD90031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E5F2E86FBD90031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E462E86FBD60031CE8A /* HKTelemetryWatch */;
+			targetProxy = 6B671E5E2E86FBD90031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E6C2E86FBDA0031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E682E86FBDA0031CE8A /* HKTelemetryWatch Watch App */;
+			targetProxy = 6B671E6B2E86FBDA0031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E7A2E86FBDB0031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E682E86FBDA0031CE8A /* HKTelemetryWatch Watch App */;
+			targetProxy = 6B671E792E86FBDB0031CE8A /* PBXContainerItemProxy */;
+		};
+		6B671E842E86FBDC0031CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B671E682E86FBDA0031CE8A /* HKTelemetryWatch Watch App */;
+			targetProxy = 6B671E832E86FBDC0031CE8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B671E2D2E85D7D70031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B671E2E2E85D7D70031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B671E302E85D7D70031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKTelemetry/HKTelemetry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads heart rate to provide real-time telemetry to a secure dashboard.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Test update records";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B671E312E85D7D70031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKTelemetry/HKTelemetry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads heart rate to provide real-time telemetry to a secure dashboard.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Test update records";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6B671E332E85D7D70031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetry";
+			};
+			name = Debug;
+		};
+		6B671E342E85D7D70031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetry";
+			};
+			name = Release;
+		};
+		6B671E362E85D7D70031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKTelemetry;
+			};
+			name = Debug;
+		};
+		6B671E372E85D7D70031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKTelemetry;
+			};
+			name = Release;
+		};
+		6B671E8B2E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HKTelemetryWatch Watch App/HKTelemetryWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HKTelemetryWatch;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = test;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = krishsat9937.HKTelemetryWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		6B671E8C2E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HKTelemetryWatch Watch App/HKTelemetryWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HKTelemetryWatch;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = test;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = krishsat9937.HKTelemetryWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		6B671E8F2E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKTelemetryWatch/HKTelemetryWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HKTelemetryWatch;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B671E902E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HKTelemetryWatch/HKTelemetryWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HKTelemetryWatch;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B671E922E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetryWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetryWatch";
+			};
+			name = Debug;
+		};
+		6B671E932E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetryWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetryWatch";
+			};
+			name = Release;
+		};
+		6B671E952E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKTelemetryWatch;
+			};
+			name = Debug;
+		};
+		6B671E962E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = krishsat9937.HKTelemetryWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKTelemetryWatch;
+			};
+			name = Release;
+		};
+		6B671E982E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krishsat9937.HKTelemetryWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetryWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetryWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		6B671E992E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krishsat9937.HKTelemetryWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTelemetryWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HKTelemetryWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		6B671E9B2E86FBDC0031CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krishsat9937.HKTelemetryWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HKTelemetryWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		6B671E9C2E86FBDC0031CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 582YRLTDC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krishsat9937.HKTelemetryWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HKTelemetryWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B671E092E85D7D20031CE8A /* Build configuration list for PBXProject "HKTelemetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E2D2E85D7D70031CE8A /* Debug */,
+				6B671E2E2E85D7D70031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E2F2E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E302E85D7D70031CE8A /* Debug */,
+				6B671E312E85D7D70031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E322E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E332E85D7D70031CE8A /* Debug */,
+				6B671E342E85D7D70031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E352E85D7D70031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E362E85D7D70031CE8A /* Debug */,
+				6B671E372E85D7D70031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E8A2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E8B2E86FBDC0031CE8A /* Debug */,
+				6B671E8C2E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E8E2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E8F2E86FBDC0031CE8A /* Debug */,
+				6B671E902E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E912E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E922E86FBDC0031CE8A /* Debug */,
+				6B671E932E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E942E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E952E86FBDC0031CE8A /* Debug */,
+				6B671E962E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E972E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E982E86FBDC0031CE8A /* Debug */,
+				6B671E992E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B671E9A2E86FBDC0031CE8A /* Build configuration list for PBXNativeTarget "HKTelemetryWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B671E9B2E86FBDC0031CE8A /* Debug */,
+				6B671E9C2E86FBDC0031CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B671E062E85D7D20031CE8A /* Project object */;
+}
