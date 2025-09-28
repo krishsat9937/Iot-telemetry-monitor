@@ -140,3 +140,11 @@ A health check endpoint to verify that the server is running and can connect to 
 *   **Frontend**: TypeScript, Angular, Angular Material, Chart.js, SCSS
 *   **iOS**: Swift, SwiftUI, HealthKit
 *   **Database**: SQLite (default), PostgreSQL (supported)
+
+## Screenshots
+![WhatsApp Image 2025-09-28 at 14 40 01](https://github.com/user-attachments/assets/4b6543d4-21f7-4bf5-a6b7-2d8aac38d4e4)
+
+<img width="1765" height="942" alt="Screenshot 2025-09-28 at 2 40 26 PM" src="https://github.com/user-attachments/assets/afbcf9fc-c136-4feb-9026-a35be5ff0c28" />
+
+
+
