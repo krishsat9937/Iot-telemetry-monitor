@@ -1,0 +1,57 @@
+/* 1) SCSS @use imports FIRST */
+@use '@angular/material' as mat;
+
+/* 2) Material core BEFORE Tailwind (safer with preflight resets) */
+@include mat.core();
+
+/* 3) Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 4) Material themes */
+$primary: mat.m2-define-palette(mat.$m2-indigo-palette, 600, 500, 800);
+$accent:  mat.m2-define-palette(mat.$m2-pink-palette,   400, 300, 600);
+$warn:    mat.m2-define-palette(mat.$m2-red-palette);
+
+$light-theme: mat.m2-define-light-theme((
+  color: ( primary: $primary, accent: $accent, warn: $warn )
+));
+
+$dark-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 300, 200, 400);
+$dark-accent:  mat.m2-define-palette(mat.$m2-pink-palette,   300, 200, 400);
+$dark-theme: mat.m2-define-dark-theme((
+  color: ( primary: $dark-primary, accent: $dark-accent, warn: $warn )
+));
+
+@include mat.all-component-themes($light-theme);
+.dark { @include mat.all-component-themes($dark-theme); }
+
+/* 5) Custom global styles (Tailwind utilities allowed here) */
+.app-bg {
+  background: linear-gradient(120deg, rgba(99,102,241,.08), rgba(244,63,94,.08));
+}
+.m-card { @apply rounded-2xl shadow-soft; backdrop-filter: saturate(1.1); }
+.chip {
+  @apply px-2 py-0.5 rounded text-xs font-medium;
+  &.chip-hr { @apply bg-brand-100 text-brand-700 dark:bg-brand-700/40 dark:text-white; }
+}
+.dot {
+  @apply inline-block w-2.5 h-2.5 rounded-full;
+  &.ok { @apply bg-emerald-500 animate-pulseDot; }
+  &.off { @apply bg-red-500; }
+}
+
+.toolbar-gradient {
+  background: linear-gradient(90deg, #4f46e5, #f43f5e, #22c55e);
+  background-size: 200% 200%;
+  animation: shimmer 16s ease infinite;
+
+  // Default text color (for light mode)
+  color: #1f2937 !important; // slate-800
+
+  // In dark mode, override to white
+  body.dark & {
+    color: white !important;
+  }
+}

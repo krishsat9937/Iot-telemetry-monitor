@@ -22,15 +22,17 @@ final class TelemetryUploader {
     static let shared = TelemetryUploader()
 
     // CHANGE to your backend (use your Mac LAN IP during dev)
-    private let endpoint = URL(string: "http://192.168.0.23:8000/api/telemetry")!
+    private let endpoint = URL(string: "https://iot-telemetry-monitor.onrender.com/api/telemetry")!
     private let apiKey = "dev-demo-key" // replace or inject securely
 
     private let session: URLSession = {
         let cfg = URLSessionConfiguration.default
         cfg.timeoutIntervalForRequest = 10
         cfg.timeoutIntervalForResource = 20
+        cfg.waitsForConnectivity = true
         return URLSession(configuration: cfg)
     }()
+
     private let iso: ISO8601DateFormatter = {
         let f = ISO8601DateFormatter()
         f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]

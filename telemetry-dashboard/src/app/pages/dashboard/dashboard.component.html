@@ -1,0 +1,52 @@
+<div class="p-4 grid gap-4 xl:grid-cols-3">
+    <!-- Status -->
+    <mat-card class="m-card bg-white dark:bg-slate-800 p-4">
+        <mat-card-title class="font-semibold text-lg">Live Status</mat-card-title>
+        <mat-card-content class="mt-2 space-y-2">
+            <div class="flex items-center gap-2">
+                <span class="dot" [class.ok]="status==='live'" [class.off]="status!=='live'"></span>
+                <span class="text-sm">{{ status | titlecase }}</span>
+            </div>
+
+            <div>
+                <div class="text-xs text-gray-500">Device</div>
+                <div class="font-mono">{{ last?.device_id || '—' }}</div>
+            </div>
+
+            <div>
+                <div class="text-xs text-gray-500">Metric</div>
+                <span class="chip chip-hr">{{ last?.metric || '—' }}</span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <!-- Current value -->
+    <mat-card class="m-card flex flex-col items-center justify-center">
+        <div class="text-xs text-gray-500 mb-1">Current Heart Rate</div>
+        <div class="text-6xl font-semibold leading-none text-brand-600 dark:text-brand-300">
+            {{ (last?.metric === 'heart_rate' ? last?.value : null) || '—' | number:'1.0-0' }}
+            <span class="text-2xl align-top">bpm</span>
+        </div>
+        <div class="text-xs text-gray-500 mt-2">{{ last?.timestamp | date:'medium' }}</div>
+    </mat-card>
+
+    <!-- + NEW: Device roster -->
+    <mat-card class="m-card xl:col-span-3">
+        <mat-card-title>Devices</mat-card-title>
+        <mat-card-content class="mt-2">
+            <app-device-roster [rows]="rows"></app-device-roster>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Chart -->
+    <mat-card
+        class="m-card col-span-3 bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-slate-700 dark:to-slate-900">
+        <mat-card-title class="font-semibold">Heart Rate — last ~15 minutes</mat-card-title>
+        <mat-card-content class="h-[300px]">
+            <canvas baseChart [type]="'line'" [data]="lineData" [options]="lineOptions"></canvas>
+        </mat-card-content>
+    </mat-card>
+
+
+</div>

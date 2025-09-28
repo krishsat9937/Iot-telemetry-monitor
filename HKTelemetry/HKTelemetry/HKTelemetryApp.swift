@@ -32,18 +32,28 @@ struct HKTelemetryApp: App {
     }
 
     private func startStream() {
+        guard !HealthKitStreamer.shared.isRunning else { return }
         streamText = "Stream: starting…"
+
+        // Show a hint if nothing arrives in 5s (common if no workout active)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            if HealthKitStreamer.shared.isRunning && streamText.hasPrefix("Stream: starting") {
+                streamText = "Stream: waiting for new HR… (start a Workout on Watch for faster ticks)"
+            }
+        }
+
         HealthKitStreamer.shared.start { samples in
             guard let s = samples.last else { return }
             let bpm = s.quantity.doubleValue(for: .count().unitDivided(by: .minute()))
             let t = DateFormatter.localizedString(from: s.endDate, dateStyle: .none, timeStyle: .medium)
             DispatchQueue.main.async {
-                streamText = String(format: "Streaming tick — %.0f bpm at %@", bpm, t)
+                streamText = String(format: "Streaming — %.0f bpm at %@", bpm, t)
             }
-            // Optional: upload to backend
-            // TelemetryUploader.shared.upload(samples: samples)
+            TelemetryUploader.shared.upload(samples: [s])
         }
     }
+
+
 
     private func stopStream() {
         HealthKitStreamer.shared.stop()

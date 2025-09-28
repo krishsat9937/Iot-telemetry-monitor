@@ -11,25 +11,33 @@ final class HealthKitStreamer {
     private var observerQuery: HKObserverQuery?
     private var pollTimer: Timer?
     private var lastEndDate: Date = .distantPast
+    private(set) var isRunning = false
 
     /// Start passive streaming (works best if Watch is in an active workout).
     func start(onSamples: @escaping ([HKQuantitySample]) -> Void) {
-        stop() // idempotent restart
+        guard !isRunning else { return } // idempotent
+        isRunning = true
+
+        // Fresh state so restart works
+        anchor = nil
+        lastEndDate = .distantPast
 
         // Anchored query with live update handler
         let aq = HKAnchoredObjectQuery(type: hrType, predicate: nil, anchor: anchor, limit: HKObjectQueryNoLimit) { [weak self] _, samples, _, newAnchor, error in
             guard let self = self else { return }
             if let error = error { print("Anchored initial error:", error); return }
             self.anchor = newAnchor
-            let qty = samples as? [HKQuantitySample] ?? []
-            self.bumpLast(qty); if !qty.isEmpty { onSamples(qty) }
+            let qty = (samples as? [HKQuantitySample]) ?? []
+            self.bumpLast(qty)
+            if !qty.isEmpty { onSamples(qty) }
         }
         aq.updateHandler = { [weak self] _, samples, _, newAnchor, error in
             guard let self = self else { return }
             if let error = error { print("Anchored update error:", error); return }
             self.anchor = newAnchor
-            let qty = samples as? [HKQuantitySample] ?? []
-            self.bumpLast(qty); if !qty.isEmpty { onSamples(qty) }
+            let qty = (samples as? [HKQuantitySample]) ?? []
+            self.bumpLast(qty)
+            if !qty.isEmpty { onSamples(qty) }
         }
         anchoredQuery = aq
         store.execute(aq)
@@ -42,12 +50,15 @@ final class HealthKitStreamer {
         observerQuery = oq
         store.execute(oq)
 
-        // Background delivery (helps even when foregrounded during workouts)
+        // Background delivery (helps even in foreground during workouts)
         store.enableBackgroundDelivery(for: hrType, frequency: .immediate) { ok, err in
             if !ok { print("BG delivery failed:", String(describing: err)) }
         }
 
-        // Tiny safety poll to surface ticks even if HK batches
+        // Initial fetch so UI updates right away on restart
+        fetchDelta(onSamples: onSamples)
+
+        // Safety poll to surface ticks even if HK batches
         pollTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] _ in
             self?.fetchDelta(onSamples: onSamples)
         }
@@ -55,14 +66,19 @@ final class HealthKitStreamer {
     }
 
     func stop() {
+        isRunning = false
         if let q = anchoredQuery { store.stop(q) }
-        if let q = observerQuery { store.stop(q) }
+        if let q = observerQuery  { store.stop(q) }
         anchoredQuery = nil
         observerQuery  = nil
         pollTimer?.invalidate()
         pollTimer = nil
+        // Clear anchors so the next start is fresh
+        anchor = nil
+        lastEndDate = .distantPast
     }
 
+    // MARK: - Helpers
     private func bumpLast(_ samples: [HKQuantitySample]) {
         if let m = samples.map(\.endDate).max(), m > lastEndDate { lastEndDate = m }
     }
@@ -72,8 +88,11 @@ final class HealthKitStreamer {
         let sort = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: true)
         let q = HKSampleQuery(sampleType: hrType, predicate: pred, limit: HKObjectQueryNoLimit, sortDescriptors: [sort]) { [weak self] _, samples, error in
             if let error = error { print("Delta query error:", error); return }
-            let qty = samples as? [HKQuantitySample] ?? []
-            if !qty.isEmpty { self?.bumpLast(qty); onSamples(qty) }
+            let qty = (samples as? [HKQuantitySample]) ?? []
+            if !qty.isEmpty {
+                self?.bumpLast(qty)
+                onSamples(qty)
+            }
         }
         store.execute(q)
     }
