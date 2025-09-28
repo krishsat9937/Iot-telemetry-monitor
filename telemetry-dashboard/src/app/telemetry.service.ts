@@ -11,8 +11,7 @@ export interface TelemetryRow {
   created_at: string;  // ISO
 }
 
-/** Change default backend here (can be overridden via setApiBase) */
-let API_BASE = 'https://iot-telemetry-monitor.onrender.com';
+let API_BASE = (import.meta as any).env.NG_APP_API_BASE;
 
 type ConnState = 'connecting' | 'live' | 'offline';
 
