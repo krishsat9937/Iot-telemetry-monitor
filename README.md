@@ -144,7 +144,8 @@ A health check endpoint to verify that the server is running and can connect to 
 ## Screenshots
 ![WhatsApp Image 2025-09-28 at 14 40 01](https://github.com/user-attachments/assets/4b6543d4-21f7-4bf5-a6b7-2d8aac38d4e4)
 
-<img width="1765" height="942" alt="Screenshot 2025-09-28 at 2 40 26 PM" src="https://github.com/user-attachments/assets/afbcf9fc-c136-4feb-9026-a35be5ff0c28" />
+<img width="2547" height="942" alt="Screenshot 2025-09-29 at 10 41 18 AM" src="https://github.com/user-attachments/assets/2776e81b-e177-46c3-aaeb-b0ebecbf7d18" />
+
 
 
 
