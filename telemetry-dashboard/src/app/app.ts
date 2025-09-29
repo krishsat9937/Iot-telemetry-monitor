@@ -1,20 +1,23 @@
 import { Component, OnDestroy, effect, inject, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { TelemetryService } from './telemetry.service';
 import {TitleCasePipe, CommonModule} from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+
 type ConnState = 'connecting' | 'live' | 'offline';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatButtonModule, TitleCasePipe],
+  imports: [CommonModule, RouterOutlet, MatToolbarModule, MatButtonModule, TitleCasePipe, MatIconModule],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App implements OnDestroy {
   private svc = inject(TelemetryService);
+  private router = inject(Router);
 
   // theme
   isDark = signal<boolean>(false);
@@ -47,6 +50,14 @@ export class App implements OnDestroy {
   }
 
   toggleTheme() { this.isDark.update(v => !v); }
+
+  onDashboardClick() {
+    this.router.navigate(['/']);
+  }
+
+  onEventsClick() {
+    this.router.navigate(['/events']);
+  }
 
   async pingHealth() {
     try {

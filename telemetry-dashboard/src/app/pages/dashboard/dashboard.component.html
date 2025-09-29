@@ -1,52 +1,77 @@
-<div class="p-4 grid gap-4 xl:grid-cols-3">
-    <!-- Status -->
-    <mat-card class="m-card bg-white dark:bg-slate-800 p-4">
-        <mat-card-title class="font-semibold text-lg">Live Status</mat-card-title>
-        <mat-card-content class="mt-2 space-y-2">
-            <div class="flex items-center gap-2">
+<div class="p-6 max-w-6xl mx-auto grid grid-cols-1 gap-6 xl:grid-cols-3">
+
+    <!-- Live Status and Latest Row (left columns on wide screens) -->
+    <mat-card class="col-span-1 flex flex-col gap-4 p-4">
+        <mat-card-header>
+            <mat-card-title>Live Status</mat-card-title>
+            <mat-card-subtitle>
                 <span class="dot" [class.ok]="status==='live'" [class.off]="status!=='live'"></span>
                 <span class="text-sm">{{ status | titlecase }}</span>
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-divider class="my-2"></mat-divider>
+        <!-- Latest row as Material table, single row -->
+        <table mat-table [dataSource]="displayedLatest" class="mat-elevation-z0 w-full mb-4">
+            <ng-container matColumnDef="device_id">
+                <th mat-header-cell *matHeaderCellDef>Device</th>
+                <td mat-cell *matCellDef="let element">{{ element.device_id || '—' }}</td>
+            </ng-container>
+            <ng-container matColumnDef="metric">
+                <th mat-header-cell *matHeaderCellDef>Metric</th>
+                <td mat-cell *matCellDef="let element">
+                    <mat-chip>{{ element.metric || '—' }}</mat-chip>
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+
+
+        <mat-card class="m-card flex flex-col items-center justify-center p-6">
+            <!-- Heart icon with pulse animation -->
+            <mat-icon style="font-size: 64px; color: var(--heart-color);" class="heartbeat-icon"
+                aria-label="Heart rate icon">
+                favorite
+            </mat-icon>
+
+            <!-- Large heart rate value with colored text -->
+            <div class="text-7xl font-extrabold mt-2" [style.color]="heartColor">
+                {{ (last?.metric === 'heart_rate' ? (last?.value | number:'1.0-0') : '—') }}
+                <span class="text-3xl align-top">bpm</span>
             </div>
 
-            <div>
-                <div class="text-xs text-gray-500">Device</div>
-                <div class="font-mono">{{ last?.device_id || '—' }}</div>
+            <!-- Trend indicator -->
+            <div class="flex items-center gap-2 mt-1" *ngIf="last && previous">
+                <mat-icon [color]="trend === 'up' ? 'primary' : trend === 'down' ? 'warn' : ''">
+                    {{ trend === 'up' ? 'trending_up' : trend === 'down' ? 'trending_down' : 'trending_flat' }}
+                </mat-icon>
+                <span class="text-sm text-gray-600">
+                    {{ trend === 'up' ? 'Rising' : trend === 'down' ? 'Falling' : 'Stable' }}
+                </span>
             </div>
 
-            <div>
-                <div class="text-xs text-gray-500">Metric</div>
-                <span class="chip chip-hr">{{ last?.metric || '—' }}</span>
-            </div>
-        </mat-card-content>
+            <!-- Timestamp -->
+            <div class="text-xs text-gray-500 mt-2">{{ last?.timestamp | date:'medium' }}</div>
+        </mat-card>
     </mat-card>
 
 
-    <!-- Current value -->
-    <mat-card class="m-card flex flex-col items-center justify-center">
-        <div class="text-xs text-gray-500 mb-1">Current Heart Rate</div>
-        <div class="text-6xl font-semibold leading-none text-brand-600 dark:text-brand-300">
-            {{ (last?.metric === 'heart_rate' ? last?.value : null) || '—' | number:'1.0-0' }}
-            <span class="text-2xl align-top">bpm</span>
-        </div>
-        <div class="text-xs text-gray-500 mt-2">{{ last?.timestamp | date:'medium' }}</div>
-    </mat-card>
-
-    <!-- + NEW: Device roster -->
-    <mat-card class="m-card xl:col-span-3">
+    <!-- Device roster (right column)
+    <mat-card class="col-span-1 flex flex-col p-4">
         <mat-card-title>Devices</mat-card-title>
         <mat-card-content class="mt-2">
             <app-device-roster [rows]="rows"></app-device-roster>
         </mat-card-content>
-    </mat-card>
+    </mat-card> -->
 
-    <!-- Chart -->
+    <!-- Chart (spans all columns below) -->
     <mat-card
-        class="m-card col-span-3 bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-slate-700 dark:to-slate-900">
+        class="col-span-1 xl:col-span-3 bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-slate-700 dark:to-slate-900">
         <mat-card-title class="font-semibold">Heart Rate — last ~15 minutes</mat-card-title>
         <mat-card-content class="h-[300px]">
             <canvas baseChart [type]="'line'" [data]="lineData" [options]="lineOptions"></canvas>
         </mat-card-content>
     </mat-card>
-
 
 </div>
